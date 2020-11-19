@@ -43,3 +43,16 @@
   .page__showsport_background{
     background-color: #4C53B4;
   }
+.text_f{
+  font-family: 'Kanit', sans-serif;
+}
+
+.sport_details {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.sport_info {
+  padding: 0px 10px;
+  font-size: 14px;
+}

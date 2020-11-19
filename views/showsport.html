@@ -1,113 +1,111 @@
-<ons-page id="showsport">
+<ons-page id="showsport" class="text_f">
     <ons-toolbar class="tabbar_showsport">
-        <div class="left"><ons-back-button onclick="goBack()">Page 1</ons-back-button></div>
-        <div class="center" id="sport" style="color: white; font-size: 20px;" >วิ่ง</div>
-      </ons-toolbar>
+        <div class="left">
+            <ons-back-button onclick="goBack()">Page 1</ons-back-button>
+        </div>
+        <div class="center" style="color: white; font-size: 20px;">วิ่ง</div>
+    </ons-toolbar>
 
     <div class="trailer" style="text-align: center;">
-      <img src="/img/sport1.png" width="60%" style="margin-top: 20px;">
+        <img src="/img/sport1.png" width="60%" style="margin-top: 20px;">
     </div>
 
-    <div class="movie_info">
-        <div class="movie_synopsis">การวิ่งบนลู่วิ่งสายพานจะได้ผลเหมือนกันกับวิ่งบนทางราบถ้าเราได้ใช้กำลังในการออกแรงวิ่งเท่า ๆ กัน</div>
-      <h2 id="movie_title"></h2>
-      <ons-row class="movie_general_info">
-        <ons-col>2016</ons-col>
-        <ons-col>TV-14</ons-col>
-        <ons-col>2h 0m</ons-col>
-      </ons-row>
-     
-  
-      <ons-row class="movie_extra_buttons">
-        <ons-col>
-          <ons-button modifier="quiet">
-            <ons-icon icon="ion-plus-round"></ons-icon>
-            <div>My List</div>
-          </ons-button>
-        </ons-col>
-        <ons-col>
-          <ons-if platform="ios">
-            <ons-button modifier="quiet">
-              <ons-icon icon="ion-ios-upload-outline"></ons-icon>
-              <div>Share</div>
-            </ons-button>
-          </ons-if>
-        </ons-col>
-      </ons-row>
+    <div class="sport_info">
+
+        <div class="sport_details">
+            การวิ่งบนลู่วิ่งสายพานจะได้ผลเหมือนกันกับวิ่งบนทางราบถ้าเราได้ใช้กำลังในการออกแรงวิ่งเท่าๆกัน</div>
+        <h2 id="movie_title"></h2>
+        <ons-row class="movie_general_info">
+            <ons-col>2016</ons-col>
+            <ons-col>TV-14</ons-col>
+            <ons-col>2h 0m</ons-col>
+        </ons-row>
+
+
+        <ons-row class="movie_extra_buttons">
+            <ons-col>
+                <ons-button modifier="quiet">
+                    <ons-icon icon="ion-plus-round"></ons-icon>
+                    <div>My List</div>
+                </ons-button>
+            </ons-col>
+            <ons-col>
+                <ons-if platform="ios">
+                    <ons-button modifier="quiet">
+                        <ons-icon icon="ion-ios-upload-outline"></ons-icon>
+                        <div>Share</div>
+                    </ons-button>
+                </ons-if>
+            </ons-col>
+        </ons-row>
     </div>
 
     <div class="movie_list">
-      Similar Movies
-      <ons-carousel auto-refresh swipeable overscrollable item-width="110px">
-        <ons-carousel-item modifier="nodivider" id="Similar Movie 1" onclick="openMovieDetails(this.id)">
-          <img src="assets/img/movie_cover_template.jpg">
-        </ons-carousel-item>
-        <ons-carousel-item modifier="nodivider" id="Similar Movie 2" onclick="openMovieDetails(this.id)">
-          <img src="assets/img/movie_cover_template.jpg">
-        </ons-carousel-item>
-        <ons-carousel-item modifier="nodivider" id="Similar Movie 3" onclick="openMovieDetails(this.id)">
-          <img src="assets/img/movie_cover_template.jpg">
-        </ons-carousel-item>
-      </ons-carousel>
+        Similar Movies
+        <ons-carousel auto-refresh swipeable overscrollable item-width="110px">
+            <ons-carousel-item modifier="nodivider" id="Similar Movie 1" onclick="openMovieDetails(this.id)">
+                <img src="assets/img/movie_cover_template.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider" id="Similar Movie 2" onclick="openMovieDetails(this.id)">
+                <img src="assets/img/movie_cover_template.jpg">
+            </ons-carousel-item>
+            <ons-carousel-item modifier="nodivider" id="Similar Movie 3" onclick="openMovieDetails(this.id)">
+                <img src="assets/img/movie_cover_template.jpg">
+            </ons-carousel-item>
+        </ons-carousel>
     </div>
+ 
 
     <style type="text/css">
-      .trailer {
-        height: 300px;
-        position: relative;
-      }
+        .trailer {
+            height: 300px;
+            position: relative;
+        }
 
 
-      .trailer ons-icon:active {
-        opacity: 1;
-      }
+        .trailer ons-icon:active {
+            opacity: 1;
+        }
 
-      .trailer_toolbar {
-        position: absolute;
-      }
+        .trailer_toolbar {
+            position: absolute;
+        }
 
-      .movie_info {
-        padding: 0px 10px;
-        font-size: 14px;
-      }
+        
 
-      .movie_general_info {
-        width: 250px;
-        margin-bottom: 15px;
-        color: gray;
-      }
+        .movie_general_info {
+            width: 250px;
+            margin-bottom: 15px;
+            color: gray;
+        }
 
-      .movie_synopsis {
-        text-align: justify;
-        margin-bottom: 10px;
-      }
 
-      .movie_cast {
-        color: gray;
-      }
+        .movie_cast {
+            color: gray;
+        }
 
-      .stars {
-        white-space: nowrap;
-        margin-right: 15px
-      }
+        .stars {
+            white-space: nowrap;
+            margin-right: 15px
+        }
 
-      .movie_extra_buttons {
-        margin-top: 20px;
-        width: 50%;
-      }
+        .movie_extra_buttons {
+            margin-top: 20px;
+            width: 50%;
+        }
 
-      .movie_extra_buttons ons-icon {
-        font-size: 25px;
-      }
+        .movie_extra_buttons ons-icon {
+            font-size: 25px;
+        }
 
-      .movie_extra_buttons ons-button {
-        text-align: center;
-        color: white;
-        font-size: 14px;
-      }
+        .movie_extra_buttons ons-button {
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
 
-      .movie_extra_buttons ons-button:active {
-        color: #96003c;
-      }
+        .movie_extra_buttons ons-button:active {
+            color: #96003c;
+        }
     </style>
-  </ons-page>
+</ons-page>
