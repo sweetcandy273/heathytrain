@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BMI</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/onsenui/onsenui.css" />
+    <link rel="stylesheet" href="lib/onsenui/onsen-css-components.min.css" />
+    <script src="lib/onsenui/onsenui.min.js"></script>
+    <script src="lib/jquery/jquery-3.5.1.min.js"></script>
+</head>
+
+<body >
+    
+    <ons-navigator id="myNavigator" page="bmi.html">
+        <template id="bmi.html" >
+
+            <ons-page id="bmi">
+
+                <div class=" page_contentbmi" >
+                    <br>
+                    <div style=" text-align: center; font-size: 35px;">ดัชนีมวลกาย ( BMI )</div>
+                    <div style="margin-left: 20px; margin-top: 25px; text-align: left; color: rgb(82, 82, 82);">Body
+                        Mass
+                        Index : BMI</div>
+
+                    <div style="height: 200px; padding: 1px 0 0 0;">
+                        <div class="card">
+                            <form>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">ส่วนสูง ( cm. )</label>
+                                    <input type="text" class="form-control" id="height" placeholder="ส่วนสูง">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">น้ำหนัก ( kg. )</label>
+                                    <input type="text" class="form-control" id="weight" placeholder="น้ำหนัก">
+                                </div>
+                            </form>
+                        </div>
+                        <br>
+
+                        <button type="submit " class="btn btn-primary btn-lg btn-block"
+                            onclick="computeBMI();">คำนวณ</button>
+
+                        <br>
+                        <div class="card">
+
+
+                            <h1 style="text-align: center;"> BMI : </h1>
+                            <span id="output" style="text-align: center;color: blueviolet;"></span>
+
+                            <h2 style="text-align: center;">ผลทดสอบ : </h2>
+                            <span id="comment" style="text-align: center;color: blueviolet;"> </span>
+                        </div>
+                    </div>
+                </div>
+
+         </ons-page>
+
+        </template>
+
+    </ons-navigator>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="/js/bmi.js"></script>
+</body>
+
+</html>
