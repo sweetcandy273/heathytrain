@@ -36,3 +36,23 @@
       color: white;
       margin-top: 10px;
   }
+
+
+  .food{
+
+    border-radius: 10px;
+    width: 165px;
+    height: 205px;
+    display: table;
+    text-align: center;
+
+  }
+  
+  .food_cover{
+
+
+    padding: 0px 15px;
+    margin: 10px 0px;
+
+  }
+ 
