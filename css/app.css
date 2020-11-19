@@ -36,3 +36,14 @@
       color: white;
       margin-top: 10px;
   }
+  .tabbar_showsport{
+    background: #4C53B4;
+
+  }
+  .page__showsport_background{
+    background-color: #4C53B4;
+  }
+.head_sport{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}

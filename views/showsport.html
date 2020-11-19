@@ -1,8 +1,142 @@
+<ons-page id="showsport">
+    <ons-toolbar >
+        <div class="left"><ons-back-button onclick="goBack()">Page 1</ons-back-button></div>
+        <div class="head_sport">วิ่ง</div>
+      </ons-toolbar>
 
+    <div class="trailer">
+      <ons-icon icon="fa-play-circle"></ons-icon>
+      <img src="assets/img/onsenui-roadmap.jpg">
+    </div>
 
-    <ons-page id="showsport">    
-        <ons-toolbar>
-            <div class="left"><ons-back-button>Page 1</ons-back-button></div>
-            <div class="center" id="sport"></div>
-          </ons-toolbar>
-    </ons-page>
+    <div class="movie_info">
+      <h2 id="movie_title"></h2>
+      <ons-row class="movie_general_info">
+        <ons-col class="stars">
+          <ons-icon style="color: red" icon="fa-star"></ons-icon>
+          <ons-icon style="color: red" icon="fa-star"></ons-icon>
+          <ons-icon style="color: red" icon="fa-star"></ons-icon>
+          <ons-icon style="color: red" icon="fa-star"></ons-icon>
+          <ons-icon style="color: gray" icon="fa-star"></ons-icon>
+        </ons-col>
+        <ons-col>2016</ons-col>
+        <ons-col>TV-14</ons-col>
+        <ons-col>2h 0m</ons-col>
+      </ons-row>
+      <div class="movie_synopsis">When the protagonist was a child, he dreamed of becoming a hero of a story that everyone will know. As he aged, he realized his dreams are just that - dreams and nothing more. But never did he expect that when he turned 21 years old, the unexpected would have happened and that the story he was longing for will start to unfold.</div>
+      <div class="movie_cast">
+        Cast: Actor 1, Actress 1, Actor 2, Actress 2 <br/>
+        Director: Popular Director
+      </div>
+      <ons-row class="movie_extra_buttons">
+        <ons-col>
+          <ons-button modifier="quiet">
+            <ons-icon icon="ion-plus-round"></ons-icon>
+            <div>My List</div>
+          </ons-button>
+        </ons-col>
+        <ons-col>
+          <ons-if platform="ios">
+            <ons-button modifier="quiet">
+              <ons-icon icon="ion-ios-upload-outline"></ons-icon>
+              <div>Share</div>
+            </ons-button>
+          </ons-if>
+        </ons-col>
+      </ons-row>
+    </div>
+
+    <div class="movie_list">
+      Similar Movies
+      <ons-carousel auto-refresh swipeable overscrollable item-width="110px">
+        <ons-carousel-item modifier="nodivider" id="Similar Movie 1" onclick="openMovieDetails(this.id)">
+          <img src="assets/img/movie_cover_template.jpg">
+        </ons-carousel-item>
+        <ons-carousel-item modifier="nodivider" id="Similar Movie 2" onclick="openMovieDetails(this.id)">
+          <img src="assets/img/movie_cover_template.jpg">
+        </ons-carousel-item>
+        <ons-carousel-item modifier="nodivider" id="Similar Movie 3" onclick="openMovieDetails(this.id)">
+          <img src="assets/img/movie_cover_template.jpg">
+        </ons-carousel-item>
+      </ons-carousel>
+    </div>
+
+    <style type="text/css">
+      .trailer {
+        height: 190px;
+        position: relative;
+      }
+
+      .trailer img {
+        width: 100%;
+        height: 100%
+      }
+
+      .trailer ons-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 50px;
+        margin-top: -25px;
+        margin-left: -25px;
+        color: #666;
+        background: white;
+        width: 50px;
+        text-align: center;
+        border-radius: 50%;
+        opacity: 0.7;
+      }
+
+      .trailer ons-icon:active {
+        opacity: 1;
+      }
+
+      .trailer_toolbar {
+        position: absolute;
+      }
+
+      .movie_info {
+        padding: 0px 10px;
+        font-size: 14px;
+      }
+
+      .movie_general_info {
+        width: 250px;
+        margin-bottom: 15px;
+        color: gray;
+      }
+
+      .movie_synopsis {
+        text-align: justify;
+        margin-bottom: 10px;
+      }
+
+      .movie_cast {
+        color: gray;
+      }
+
+      .stars {
+        white-space: nowrap;
+        margin-right: 15px
+      }
+
+      .movie_extra_buttons {
+        margin-top: 20px;
+        width: 50%;
+      }
+
+      .movie_extra_buttons ons-icon {
+        font-size: 25px;
+      }
+
+      .movie_extra_buttons ons-button {
+        text-align: center;
+        color: white;
+        font-size: 14px;
+      }
+
+      .movie_extra_buttons ons-button:active {
+        color: #96003c;
+      }
+    </style>
+  </ons-page>
