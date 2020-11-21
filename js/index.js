@@ -23,6 +23,15 @@ function openshowsport(id) {
     document.querySelector('#myNavigator').popPage()
   
   }
+  function opentainer(id) {
+    
+    document.querySelector('#myNavigator1').pushPage('views/trainer.html', {data: {title: id}});
+  }
+  function goBacktainer() {
+
+    document.querySelector('#myNavigator1').popPage()
+  
+  }
 
 //   db.collection("sport").get().then((querySnapshot) => {
 //     querySnapshot.forEach((doc) => {
