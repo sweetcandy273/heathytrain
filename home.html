@@ -77,24 +77,38 @@
             <div class="chat_home" style="background-color: #333242;" onclick="">
 
                 <ons-col style="color: #ffffff;">
-                    <div class="activity_home_title">Chat With Trainer</div>
-                    <div class="activity_home_detail">สนทนากับเทรนเนอร์ที่เป็นผู้ดูแลของคุณ</div>
+                    <div>
+
+                        <div class="activity_home_title">Chat With Trainer</div>
+                        <div class="activity_home_detail">สนทนากับเทรนเนอร์ที่เป็นผู้ดูแลของคุณ
+                        </div>
+                    </div>
                 </ons-col>
-                <ons-col>
-                    <img src="/img/chat.png" alt="" width="20%">
+                <ons-col style="text-align: right;">
+                    <img src="/img/chat.png" alt="" width="15%">
                 </ons-col>
 
             </div>
         </ons-row>
 
         <ons-row class="home_cover">
-            <div class="bmi_home" style="background-color: #333242;" onclick="">
+            <div class="bmi_home" style="background-color: #FD8EA9;" onclick="">
                 <ons-col style="color: #ffffff;">
-                    <div class="activity_home_title">BMI</div>
-                    <div class="activity_home_detail">BMI:</div>
+                    <div class="activity_home_title" style="font-size: 30px;">BMI</div>
+                    <div class="activity_home_detail">คำนวณดัชนีมวลกาย</div>
                 </ons-col>
-          
-                <img src="/img/sport8.png" alt="" width="50%">
+                <ons-col style="color: #ffffff;">
+                    <div class="activity_home_detail">BMI:</div>
+                    <div class="activity_home_detail">?</div>
+                    <div class="activity_home_detail">ผลทดสอบ:</div>
+                    <div class="activity_home_detail">?</div>
+                </ons-col>
+
+                <div class="container text-right">
+                    <ons-button class="btn-start" onclick="">UPDATE</ons-button>
+                </div>
+
+
             </div>
         </ons-row>
 
@@ -103,11 +117,11 @@
     <ons-tabbar swipeable position="auto">
         <ons-col class="icon_tab">
             <img src="/img/icon_home.png" alt="" width="40%">
-      
+
         </ons-col>
         <ons-col class="icon_tab">
             <img src="/img/icon_workout.png" alt="" width="50%">
-         
+
         </ons-col>
         <ons-col class="icon_tab">
             <img src="/img/icon_food.png" alt="" width="40%">
