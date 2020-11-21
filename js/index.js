@@ -15,9 +15,20 @@ firebase.analytics();
 var db = firebase.firestore();
 
 function openshowsport(id) {
+    db.collection("sport").get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        if (doc.data().sport_id == id) {
+          $(".h_name").append(doc.data().sport_name)
+          $(".sport_name").append(doc.data().sport_name)
+          $(".sport_details").append(doc.data().sport_d)
+        }
+  
+  
+      });
+    });
+    document.querySelector('#myNavigator').pushPage('views/showsport.html');
+  }
 
-    document.querySelector('#myNavigator').pushPage('views/showsport.html', { data: { title: id } });
-}
 function goBack() {
 
     document.querySelector('#myNavigator').popPage()
@@ -76,5 +87,9 @@ db.collection("sport").get().then((querySnapshot) => {
         <p class="text_sport">${doc.data().sport_name}</p>`
             $("#aerobic_dance").append(result1)
         }
+     
+            
+       
+        
     });
 });
