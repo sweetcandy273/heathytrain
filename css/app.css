@@ -56,3 +56,18 @@
   padding: 0px 10px;
   font-size: 14px;
 }
+.sport_name{
+  font-size: 30px;
+}
+.trainer{
+  font-size: 30px;
+  padding: 0px 10px;
+  margin-top: 15px;
+}
+.trainer_show{
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  display: table;
+  text-align: center;
+}
