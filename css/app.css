@@ -58,6 +58,7 @@
 }
 .sport_name{
   font-size: 30px;
+  margin-left: 10px;
 }
 .trainer{
   font-size: 30px;
@@ -83,5 +84,9 @@
   font-size: 15px;
 }
 .button.fab, ons-fab.fab, ons-speed-dial-item.fab {
-background-color: #03174C;
+background-color: white;
+}
+.train1{
+  width: 100%;
+  
 }

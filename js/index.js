@@ -16,18 +16,91 @@ var db = firebase.firestore();
 
 function openshowsport(id) {
     db.collection("sport").get().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-        if (doc.data().sport_id == id) {
-          $(".h_name").append(doc.data().sport_name)
-          $(".sport_name").append(doc.data().sport_name)
-          $(".sport_details").append(doc.data().sport_d)
-        }
-  
-  
-      });
+        querySnapshot.forEach((doc) => {
+
+
+
+            if (doc.data().sport_id == id) {
+
+                const result1 =
+                    `
+                <img src="${doc.data().URLsport}" width="60%" style="margin-top: 50px;">`
+                $(".trailer").append(result1)
+
+
+                $(".h_name").append(doc.data().sport_name)
+                $(".sport_name").append(doc.data().sport_name)
+                $(".sport_details").append(doc.data().sport_d)
+            }
+
+
+        });
+    });
+    db.collection("train").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+
+            if (doc.data().sport_id == id) {
+
+                const result1 =
+               `
+               <ons-col class="train1">
+                <div style="width: 180px;">
+                <img src="${doc.data().URLtrain}" id="${doc.data().train_name}" class="trainer_pic" alt="" width="70%" style="margin-top: 10px;"
+                onclick="opentainer(this.id)">
+                <div class="trainer_name">
+                ${doc.data().train_name}
+                  </div>
+                <p class="text_hr" style="color: #C8D8EB ;">${doc.data().train_hr}  ${doc.data().train_c}BTH</p>
+                </div>
+                </ons-col>`
+                $(".trainer_cover").append(result1)
+
+            }else if(doc.data().sport_id1 == id){
+                const result1 =  `
+                <ons-col class="train1">
+                 <div style="width: 180px;">
+                 <img src="${doc.data().URLtrain}" id="${doc.data().train_name}" class="trainer_pic" alt="" width="70%" style="margin-top: 10px;"
+                 onclick="opentainer(this.id)">
+                 <div class="trainer_name">
+                 ${doc.data().train_name}
+                   </div>
+                 <p class="text_hr" style="color: #C8D8EB ;">${doc.data().train_hr}  ${doc.data().train_c}BTH</p>
+                 </div>
+                 </ons-col>`
+                 $(".trainer_cover").append(result1)
+            }else if(doc.data().sport_id2 == id){
+                const result1 =  `
+                <ons-col class="train1">
+                 <div style="width: 180px;">
+                 <img src="${doc.data().URLtrain}" id="${doc.data().train_name}" class="trainer_pic" alt="" width="70%" style="margin-top: 10px;"
+                 onclick="opentainer(this.id)">
+                 <div class="trainer_name">
+                 ${doc.data().train_name}
+                   </div>
+                 <p class="text_hr" style="color: #C8D8EB ;">${doc.data().train_hr}  ${doc.data().train_c}BTH</p>
+                 </div>
+                 </ons-col>`
+                 $(".trainer_cover").append(result1)
+            }else if(doc.data().sport_id3 == id){
+                const result1 =  `
+                <ons-col class="train1">
+                 <div style="width: 180px;">
+                 <img src="${doc.data().URLtrain}" id="${doc.data().train_name}" class="trainer_pic" alt="" width="70%" style="margin-top: 10px;"
+                 onclick="opentainer(this.id)">
+                 <div class="trainer_name">
+                 ${doc.data().train_name}
+                   </div>
+                 <p class="text_hr" style="color: #C8D8EB ;">${doc.data().train_hr}  ${doc.data().train_c}BTH</p>
+                 </div>
+                 </ons-col>`
+                 $(".trainer_cover").append(result1)
+            }
+
+
+        });
     });
     document.querySelector('#myNavigator').pushPage('views/showsport.html');
-  }
+}
 
 function goBack() {
 
@@ -87,9 +160,9 @@ db.collection("sport").get().then((querySnapshot) => {
         <p class="text_sport">${doc.data().sport_name}</p>`
             $("#aerobic_dance").append(result1)
         }
-     
-            
-       
-        
+
+
+
+
     });
 });
