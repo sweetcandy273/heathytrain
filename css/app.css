@@ -45,6 +45,7 @@
   }
 .text_f{
   font-family: 'Kanit', sans-serif;
+
 }
 
 .sport_details {
@@ -93,4 +94,13 @@ background-color: white;
 .train_picname{
   font-size: 30px;
   margin-left: 10px;
+}
+.train_c{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.train_sportname{
+  font-size: 22px;
+  margin-top: 15px;
 }

@@ -108,25 +108,50 @@ function goBack() {
     document.querySelector('#myNavigator').popPage()
 
 }
-function opentainer(id) {
+function opentainer(id,) {
     db.collection("train").get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             if (doc.data().train_name == id) {
 
                 const result1 =
                     `
-                    <img src="${doc.data().URLtrain}" width="60%" style="margin-top: 20px;">`
+                    <img src="${doc.data().pic}" width="60%" style="margin-top: 20px;">`
                 $(".train_pro").append(result1)
-                $(".sport_details").append(doc.data().train_d)
+                $(".sport_details").append(doc.data().sport_d)
                 $(".train_name").append(doc.data().train_name)
                 $(".train_picname").append(doc.data().train_name)
-                const result2 =
-                `
-                <p >${doc.data().train_hr}  ${doc.data().train_c}BTH</p>`
 
+
+                const result2 =
+             
+                `<div class="train_sportname">${doc.data().sport_name}</div>
+                     <p >${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
                 $(".train_c").append(result2)
-               
+
+                const result3 =
+                `<div class="train_sportname">${doc.data().sport_name1}</div>
+                <p >${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
+                $(".train_c").append(result3)
+
+                const result4 =
+                `<div class="train_sportname">${doc.data().sport_name2}</div>
+                <p >${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
+                $(".train_c").append(result4)
+                
+                const result5 =
+                `<div class="train_sportname">${doc.data().sport_name3}</div>
+                <p >${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
+                $(".train_c").append(result5)
+
+
+
             }
+
+       
+
+
+
+
 
 
         });
