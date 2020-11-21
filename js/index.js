@@ -125,22 +125,22 @@ function opentainer(id,) {
                 const result2 =
              
                 `<div class="train_sportname">${doc.data().sport_name}</div>
-                     <p >${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
+                     <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
                 $(".train_c").append(result2)
 
                 const result3 =
                 `<div class="train_sportname">${doc.data().sport_name1}</div>
-                <p >${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
+                <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
                 $(".train_c").append(result3)
 
                 const result4 =
                 `<div class="train_sportname">${doc.data().sport_name2}</div>
-                <p >${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
+                <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
                 $(".train_c").append(result4)
                 
                 const result5 =
                 `<div class="train_sportname">${doc.data().sport_name3}</div>
-                <p >${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
+                <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
                 $(".train_c").append(result5)
 
 
