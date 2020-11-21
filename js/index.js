@@ -25,11 +25,11 @@ function openshowsport(id) {
   }
   function opentainer(id) {
     
-    document.querySelector('#myNavigator1').pushPage('views/trainer.html', {data: {title: id}});
+    document.querySelector('#myNavigator').pushPage('views/trainer.html', {data: {title: id}});
   }
   function goBacktainer() {
 
-    document.querySelector('#myNavigator1').popPage()
+    document.querySelector('#myNavigator').popPage()
   
   }
 
