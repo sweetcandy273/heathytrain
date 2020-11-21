@@ -42,7 +42,7 @@ function openshowsport(id) {
             if (doc.data().sport_id == id) {
 
                 const result1 =
-               `
+                    `
                <ons-col class="train1">
                 <div style="width: 180px;">
                 <img src="${doc.data().URLtrain}" id="${doc.data().train_name}" class="trainer_pic" alt="" width="70%" style="margin-top: 10px;"
@@ -50,13 +50,13 @@ function openshowsport(id) {
                 <div class="trainer_name">
                 ${doc.data().train_name}
                   </div>
-                <p class="text_hr" style="color: #C8D8EB ;">${doc.data().train_hr}  ${doc.data().train_c}BTH</p>
+                <p class="text_hr" style="color: #C8D8EB ;">${doc.data().train_hr} - ${doc.data().train_c}BTH</p>
                 </div>
                 </ons-col>`
                 $(".trainer_cover").append(result1)
 
-            }else if(doc.data().sport_id1 == id){
-                const result1 =  `
+            } else if (doc.data().sport_id1 == id) {
+                const result1 = `
                 <ons-col class="train1">
                  <div style="width: 180px;">
                  <img src="${doc.data().URLtrain}" id="${doc.data().train_name}" class="trainer_pic" alt="" width="70%" style="margin-top: 10px;"
@@ -64,12 +64,12 @@ function openshowsport(id) {
                  <div class="trainer_name">
                  ${doc.data().train_name}
                    </div>
-                 <p class="text_hr" style="color: #C8D8EB ;">${doc.data().train_hr}  ${doc.data().train_c}BTH</p>
+                 <p class="text_hr" style="color: #C8D8EB ;">${doc.data().train_hr}-${doc.data().train_c}BTH</p>
                  </div>
                  </ons-col>`
-                 $(".trainer_cover").append(result1)
-            }else if(doc.data().sport_id2 == id){
-                const result1 =  `
+                $(".trainer_cover").append(result1)
+            } else if (doc.data().sport_id2 == id) {
+                const result1 = `
                 <ons-col class="train1">
                  <div style="width: 180px;">
                  <img src="${doc.data().URLtrain}" id="${doc.data().train_name}" class="trainer_pic" alt="" width="70%" style="margin-top: 10px;"
@@ -77,12 +77,12 @@ function openshowsport(id) {
                  <div class="trainer_name">
                  ${doc.data().train_name}
                    </div>
-                 <p class="text_hr" style="color: #C8D8EB ;">${doc.data().train_hr}  ${doc.data().train_c}BTH</p>
+                 <p class="text_hr" style="color: #C8D8EB ;">${doc.data().train_hr}-${doc.data().train_c}BTH</p>
                  </div>
                  </ons-col>`
-                 $(".trainer_cover").append(result1)
-            }else if(doc.data().sport_id3 == id){
-                const result1 =  `
+                $(".trainer_cover").append(result1)
+            } else if (doc.data().sport_id3 == id) {
+                const result1 = `
                 <ons-col class="train1">
                  <div style="width: 180px;">
                  <img src="${doc.data().URLtrain}" id="${doc.data().train_name}" class="trainer_pic" alt="" width="70%" style="margin-top: 10px;"
@@ -90,10 +90,11 @@ function openshowsport(id) {
                  <div class="trainer_name">
                  ${doc.data().train_name}
                    </div>
-                 <p class="text_hr" style="color: #C8D8EB ;">${doc.data().train_hr}  ${doc.data().train_c}BTH</p>
+                 <p class="text_hr" style="color: #C8D8EB ;">${doc.data().train_hr}-${doc.data().train_c}BTH</p>
+                 
                  </div>
                  </ons-col>`
-                 $(".trainer_cover").append(result1)
+                $(".trainer_cover").append(result1)
             }
 
 
@@ -108,7 +109,28 @@ function goBack() {
 
 }
 function opentainer(id) {
+    db.collection("train").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            if (doc.data().train_name == id) {
 
+                const result1 =
+                    `
+                    <img src="${doc.data().URLtrain}" width="60%" style="margin-top: 20px;">`
+                $(".train_pro").append(result1)
+                $(".sport_details").append(doc.data().train_d)
+                $(".train_name").append(doc.data().train_name)
+                $(".train_picname").append(doc.data().train_name)
+                const result2 =
+                `
+                <p >${doc.data().train_hr}  ${doc.data().train_c}BTH</p>`
+
+                $(".train_c").append(result2)
+               
+            }
+
+
+        });
+    });
     document.querySelector('#myNavigator').pushPage('views/trainer.html', { data: { title: id } });
 }
 function goBacktainer() {
