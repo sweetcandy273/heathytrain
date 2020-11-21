@@ -57,7 +57,58 @@ font-family: 'Kanit', sans-serif;
 
 /* home */
   
-  .home{
-    background-color: #FFFFFF;
+.home{
+background-color: #FFFFFF;
+font-family: 'Kanit', sans-serif;
+}
+      
+.activity_home {
+border-radius: 10px;
+width: 165px;
+height: 230px;
+display: table;
+      
+}
+.home_cover {
+  padding: 0px 15px;
+  margin: 10px 0px;
+}
+.chat_home {
+  border-radius: 10px;
+  width: 100%;
+  display: table;
+  padding: 15px 15px;
+  
+  }
+
+  .activity_home_title{
+    margin-left: 10px;
+    text-align: start;
+  }
+  .activity_home_detail{
+    margin-left: 10px;
+    text-align: start;
+ 
+  }
+  .btn-start{
+    text-align: center;
+    color: #3F414E;
+    width: 60%;
     font-family: 'Kanit', sans-serif;
-      }
+    border-radius: 38px;
+    background: #EBEAEC;
+margin-bottom: 15px;
+
+  }
+  .bmi_home {
+    border-radius: 10px;
+    width: 100%;
+    display: table;
+    padding: 15px 15px;
+    
+    }
+ 
+.icon_tab{
+text-align: center;
+  margin-top: 10px;
+}
