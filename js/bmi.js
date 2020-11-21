@@ -14,9 +14,9 @@ function computeBMI() {
 
     var output = Math.round(BMI * 100) / 100
     if (output < 18.5)
-        document.getElementById("comment").innerText = "  อยู่ในเกณฑ์น้ำหนักน้อยหรือผอม";
+        document.getElementById("comment").innerText = "  น้ำหนักน้อย";
     else if (output >= 18.5 && output <= 25)
-        document.getElementById("comment").innerText = "อยู่ในเกณฑ์ปกติ";
+        document.getElementById("comment").innerText = "ปกติ";
     else if (output >= 25 && output <= 30)
         document.getElementById("comment").innerText = "น้ำหนักเกิน";
     else if (output > 30)
