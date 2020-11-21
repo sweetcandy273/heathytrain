@@ -64,10 +64,24 @@
   padding: 0px 10px;
   margin-top: 15px;
 }
-.trainer_show{
+.trainer_pic{
   border-radius: 10px;
-  width: 100px;
-  height: 100px;
-  display: table;
-  text-align: center;
+
+}
+.trainer_cover{
+  padding: 0px 0px;
+    margin: 0px 0px;
+    text-align: center;
+}
+.trainer_name{
+  text-align: left;
+  margin-left: 20px;
+  font-size: 20px;
+
+}
+.text_hr{
+  font-size: 15px;
+}
+.button.fab, ons-fab.fab, ons-speed-dial-item.fab {
+background-color: #03174C;
 }

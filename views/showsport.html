@@ -1,10 +1,13 @@
 <ons-page id="showsport" class="text_f">
-    <ons-toolbar class="tabbar_showsport">
-        <div class="left">
-            <ons-back-button onclick="goBack()">Page 1</ons-back-button>
+
+    <ons-toolbar class="tabbar_showsport" style="text-align: center;">
+        <div class="center toolbar__center toolbar__title" style="color: white;">
+            วิ่งระยะสั้น
         </div>
-        <div class="center" style="color: white; font-size: 20px;">วิ่ง</div>
     </ons-toolbar>
+    <ons-fab position="top left" style="color: 03174C;" onclick="goBack()">
+        <i class="material-icons md-48" style="margin-top: 16px;">arrow_back</i>
+    </ons-fab>
     <ons-fab position="top right" style="color: 03174C;">
         <i class="material-icons md-48" style="margin-top: 16px;">favorite_border</i>
     </ons-fab>
@@ -19,12 +22,21 @@
         <div class="sport_details">
             การวิ่งบนลู่วิ่งสายพานจะได้ผลเหมือนกันกับวิ่งบนทางราบถ้าเราได้ใช้กำลังในการออกแรงวิ่งเท่าๆกัน</div>
         <ons-row class="movie_general_info">
-            <i class="material-icons md-48">favorite_border</i>
-            <ons-col> 514 Favorits</ons-col>
-            <i class="material-icons md-48">perm_identity</i>
-            <ons-col>28 Training</ons-col>
-            <i class="material-icons md-48">how_to_reg</i>
-            <ons-col>35 Trainer</ons-col>
+
+            <ons-col style="text-align: center;">
+                 <i class="material-icons md-48" >favorite_border</i>
+                 514 Favorits
+            </ons-col>
+            
+            <ons-col style="text-align: center;">
+                <i class="material-icons md-48">perm_identity</i>
+                28 Training
+            </ons-col>
+            
+            <ons-col style="text-align: center;">
+                <i class="material-icons md-48">how_to_reg</i>
+                4 Trainer
+            </ons-col>
         </ons-row>
     </div>
     <div class="trainer">
@@ -32,22 +44,44 @@
     </div>
 
 
-            <div class="trainer_show" id="run" style="  background-color: #8E97FD ">
-                <img src="/img/sport1.png" alt="" width="70%" style="margin-top: 10px;">
-                <p class="text_sport">วิ่งระยะสั้น</p>
+
+
+    <ons-row class="trainer_cover">
+        <ons-col>
+            <div>
+                <img src="/img/train1.jpg" class="trainer_pic" alt="" width="70%" style="margin-top: 10px;">
+                <div class="trainer_name">
+                    jungwoo
+                </div>
+                <p class="text_hr">2 HR 30 MIN 1500 BTH</p>
             </div>
-       
-            <div class="trainer_show" id="run" style="  background-color: #8E97FD ">
-                <img src="/img/sport1.png" alt="" width="70%" style="margin-top: 10px;">
-                <p class="text_sport">วิ่งระยะสั้น</p>
+            <div>
+                <img src="/img/train2.jpg" class="trainer_pic" alt="" width="70%" style="margin-top: 10px;">
+                <div class="trainer_name">
+                    jungwoo
+                </div>
+                <p class="text_hr">2 HR 30 MIN 1500 BTH</p>
             </div>
-       
-            <div class="trainer_show" id="run" style="  background-color: #8E97FD " >
-                <img src="/img/sport1.png" alt="" width="70%" style="margin-top: 10px;">
-                <p class="text_sport">วิ่งระยะสั้น</p>
+        </ons-col>
+        <ons-col>
+            <div>
+                <img src="/img/train3.jpg" class="trainer_pic" alt="" width="70%" style="margin-top: 10px;">
+                <div class="trainer_name">
+                    jungwoo
+                </div>
+                <p class="text_hr">2 HR 30 MIN 1500 BTH</p>
             </div>
-       
-  
+            <div>
+                <img src="/img/train4.jpg" class="trainer_pic" alt="" width="70%" style="margin-top: 10px;">
+                <div class="trainer_name">
+                    jungwoo
+                </div>
+                <p class="text_hr">2 HR 30 MIN 1500 BTH</p>
+            </div>
+        </ons-col>
+
+    </ons-row>
+
 
 
 
