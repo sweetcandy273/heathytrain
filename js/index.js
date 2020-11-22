@@ -117,7 +117,7 @@ function opentainer(id,) {
                     `
                     <img src="${doc.data().pic}" width="60%" style="margin-top: 20px;">`
                 $(".train_pro").append(result1)
-                $(".sport_details").append(doc.data().sport_d)
+                $(".train_details").append(doc.data().train_d)
                 $(".train_name").append(doc.data().train_name)
                 $(".train_picname").append(doc.data().train_name)
 

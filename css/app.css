@@ -107,3 +107,8 @@ background-color: white;
 .co_hr{
   color: #C8D8EB;
 }
+.train_details {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
