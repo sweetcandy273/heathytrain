@@ -112,3 +112,99 @@ background-color: white;
   text-align: justify;
   margin-bottom: 10px;
 }
+
+/* welcome */
+
+.welcome{
+  background-color: #8E97FD;
+  font-family: 'Kanit', sans-serif;
+    }
+    .btn-getstart{
+      color: #3F414E;
+      width: 100%;
+      font-family: 'Kanit', sans-serif;
+      border-radius: 38px;
+      background: #EBEAEC;
+  
+    }
+  
+  /* home */
+  .page__content h4, .page__content h3 {
+    font-family: 'Kanit', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+    
+  .text{
+  
+  font-family: 'Kanit', sans-serif;
+  }
+        
+  .activity_home {
+  border-radius: 10px;
+  width: 165px;
+  height: 230px;
+  display: table;
+        
+  }
+  .home_cover {
+    padding: 0px 15px;
+    margin: 10px 0px;
+  }
+  .chat_home {
+    border-radius: 10px;
+    width: 100%;
+    display: table;
+    padding: 15px 15px;
+    
+    }
+  
+    .activity_home_title{
+      margin-left: 10px;
+      text-align: start;
+    }
+    .activity_home_detail{
+      margin-left: 10px;
+      text-align: start;
+   
+    }
+    .btn-start{
+      text-align: center;
+      color: #3F414E;
+      width: 60%;
+      font-family: 'Kanit', sans-serif;
+      border-radius: 38px;
+      background: #EBEAEC;
+  margin-bottom: 15px;
+  
+    }
+    .bmi_home {
+      border-radius: 10px;
+      width: 100%;
+      display: table;
+      padding: 15px 15px;
+      
+      }
+   
+  .icon_tab{
+  text-align: center;
+    margin-top: 10px;
+  }
+  
+  .button.fab, ons-fab.fab, ons-speed-dial-item.fab {
+    background-color: white;
+    }
+  
+  
+    /* mycouse */
+  
+    .mycouse_title{
+      font-family: 'Kanit', sans-serif;
+      font-size: 30px;
+      margin-top: 15px;
+      margin-left: 15px;
+    }
+    .mycouse_detail{
+      font-family: 'Kanit', sans-serif;
+   color: darkgray;
+      margin-left: 15px;
+    }
