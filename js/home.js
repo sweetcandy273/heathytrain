@@ -1,12 +1,12 @@
 function gohome() {
-    window.location.href = "index.html";
+    window.location.href = "home.html";
 }
 
 function gofood() {
     window.location.href = "food.html";
 }
 function gosport() {
-    document.querySelector('#navigator_home').pushPage('sport.html');
+    window.location.href = "sport.html";
 }
 function goBack() {
     document.querySelector('#navigator_home').popPage()
