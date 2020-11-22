@@ -25,18 +25,22 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body class="home">
+<body>
     <ons-navigator swipeable id="navigator_home" page="home.html"></ons-navigator>
     <template id="home.html">
-        <ons-page id="home">
+        <ons-page class="text" id="home">
 
 
-            <div style="margin-top: 40px;">
+            <div style="margin-top: 40px;" class="text">
+          
                 <h4 class="text-center">Heathy
                     <img src="img/logo2.png" alt="" width="30px">
                     Trian</h4>
+
+                    
                 <div class="container" style="margin-top: 15px;">
                     <!-- ดึงชื่อ user -->
                     <h3>Hi User</h3>
@@ -105,21 +109,12 @@
     </template>
 
 
-    <template id="mycouse.html">
-
-        <ons-page id="mycouse">
-            
-            <ons-fab position="top left" style="color: #03174C;" onclick="goBack()">
-                <i class="material-icons md-48" style="margin-top: 16px;">arrow_back</i>
-            </ons-fab>
-    
-     
-            <p>This is the second page.</p>
-
-        </ons-page>
-
-    </template>
-
+  
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+    <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -129,6 +124,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+
     <script src="/js/home.js"></script>
 
 </body>

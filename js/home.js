@@ -20,7 +20,7 @@ function goBack() {
 
         if (page.id === 'home') {
             page.querySelector('#btn_sport').onclick = function () {
-                document.querySelector('#navigator_home').pushPage('mycouse.html', { data: { title: 'My Couse' } });
+                document.querySelector('#navigator_home').pushPage('views/mycouse.html', { data: { title: 'My Couse' } });
             };
         } else if (page.id === 'mycouse') {
             page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
