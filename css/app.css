@@ -120,3 +120,18 @@ text-align: center;
 .button.fab, ons-fab.fab, ons-speed-dial-item.fab {
   background-color: white;
   }
+
+
+  /* mycouse */
+
+  .mycouse_title{
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .mycouse_detail{
+    font-family: 'Kanit', sans-serif;
+ color: darkgray;
+    margin-left: 15px;
+  }
