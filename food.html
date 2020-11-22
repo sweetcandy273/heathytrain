@@ -8,13 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/food.css">
     <link rel="stylesheet" href="lib/onsenui/onsenui.css" />
     <link rel="stylesheet" href="lib/onsenui/onsen-css-components.min.css" />
     <script src="lib/onsenui/onsenui.min.js"></script>
     <script src="lib/jquery/jquery-3.5.1.min.js"></script>
+
 </head>
 
 <body>
@@ -25,66 +27,57 @@
 
         <ons-page id="food">
 
-            <div class=" page_content" style="background-color: #030c40;">
-
-
-                <br>
-
-                <p class="text_food">อาหารเพื่อสุขภาพ</p>
+            <div class=" page_content" style="background-color: #03174C;">
+ <br>
+  <p class="text_food">อาหารเพื่อสุขภาพ</p>
 
 
 
                 <ons-row class="food_cover">
 
-                    <ons-col style="margin-right: 5px;">
+                    <ons-col >
 
-
-
-                        <img src="/img/เมี่ยงกุ้งผัดพริกแกง.jpg" alt="" width="90%" style="margin-top: 10px;"
-                            class="rounded">
-
-
-                        <p class="text_sport">เมี่ยงกุ้งผัดพริกแกง</p>
-
-                        <div class="food" style="margin-top: 10px; background-color: #030c40" onclick="openHome()">
-                            <img src="/img/ตอติญาซีซาร์อกไก่.jpg"  width="90%" style="margin-top: 10px;"
-                                class="rounded">
+                        <div class="food" style="margin-top: 10px; background-color: #03174C">
+                            <img id="pushfood" src="/img/เมี่ยงกุ้งผัดพริกแกง.jpg" width="90%" style="margin-top: 1px;"
+                                class="rounded" onclick="openfooddetail()">
+                            <p class="text_sport">เมี่ยงกุ้งผัดพริกแกง</p>
+                        </div>
+                        <div class="food" style="margin-top: 10px; background-color: #03174C">
+                            <img  src="/img/ตอติญาซีซาร์อกไก่.jpg" width="90%" style="margin-top: 10px;" class="rounded">
                             <p class="text_sport">ตอติญาซีซาร์อกไก่</p>
                         </div>
-                        <div class="food" style="margin-top: 10px; background-color: #030c40" onclick="openHome()">
+                        <div class="food" style="margin-top: 10px; background-color: #03174C">
                             <img src="/img/ข้าวผัดสะโพกไก่ม้วน.jpg" width="90%" style="margin-top: 10px;"
                                 class="rounded">
                             <p class="text_sport">ข้าวผัดสะโพกไก่ม้วน</p>
                         </div>
-                        <div class="food" style="margin-top: 10px; background-color: #030c40" onclick="openHome()">
-                            <img src="/img/ข้าวยำสมุนไพรทรงเครื่องน้ำกะปิหวาน.jpg" width="90%"
-                                style="margin-top: 10px;" class="rounded">
+                        <div class="food" style="margin-top: 10px; background-color: #03174C">
+                            <img src="/img/ข้าวยำสมุนไพรทรงเครื่องน้ำกะปิหวาน.jpg" width="90%" style="margin-top: 10px;"
+                                class="rounded">
                             <p class="text_sport">ข้าวยำสมุนไพรทรงเครื่องน้ำกะปิหวาน</p>
                         </div>
                     </ons-col>
 
+
+
                     <ons-col>
-                        <div class="food" style="background-color: #030c40" onclick="openHome()">
-                            <img src="/img/สลัดข้าวไรซ์เบอร์รี่.jpg"  width="90%" style="margin-top: 10px;"
-                                class="rounded">
+                        <div class="food" style="background-color: #03174C">
+                            <img id="pushfood" src="/img/สลัดข้าวไรซ์เบอร์รี่.jpg" width="90%" style="margin-top: 10px;"
+                                class="rounded"  onclick="openfooddetail()" >
                             <p class="text_sport">สลัดข้าวไรซ์เบอร์รี่</p>
                         </div>
-                        <div class="food" style="margin-top: 10px; background-color: #030c40" onclick="openHome()">
-                            <img src="/img/สลัดปลาหิมะย่างเกลือ.jpg"  width="90%" style="margin-top: 10px;"
+                        <div class="food" style="margin-top: 10px; background-color: #03174C">
+                            <img src="/img/สลัดปลาหิมะย่างเกลือ.jpg" width="90%" style="margin-top: 10px;"
                                 class="rounded">
                             <p class="text_sport">สลัดปลาหิมะย่างเกลือ</p>
                         </div>
-                        <div class="food" style="margin-top: 10px; background-color: #030c40" onclick="openHome()">
-                            <img src="/img/สลัดเต้าหู้กับปลากะพง.jpg"  width="90%" style="margin-top: 10px;"
+                        <div class="food" style="margin-top: 10px; background-color: #03174C">
+                            <img src="/img/สลัดเต้าหู้กับปลากะพง.jpg" width="90%" style="margin-top: 10px;"
                                 class="rounded">
                             <p class="text_sport">สลัดเต้าหู้กับปลากะพง</p>
                         </div>
-                        <div class="food" style="margin-top: 10px; background-color: #030c40" onclick="openHome()">
-
-
-
-
-                            <img src="/img/สลัดอกไก่ย่างซอสเพสโต้.jpg"  width="90%" style="margin-top: 10px;"
+                        <div class="food" style="margin-top: 10px; background-color: #03174C">
+                            <img src="/img/สลัดอกไก่ย่างซอสเพสโต้.jpg" width="90%" style="margin-top: 10px;"
                                 class="rounded">
                             <p class="text_sport">สลัดอกไก่ย่างซอสเพสโต้</p>
                         </div>
@@ -94,21 +87,11 @@
                 </ons-row>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         </ons-page>
     </template>
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -121,6 +104,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="js/food.js"></script>
 </body>
 
 </html>
