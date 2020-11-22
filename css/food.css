@@ -1,0 +1,102 @@
+
+.sport_cover {
+    padding: 0px 15px;
+    margin: 10px 0px;
+  }
+  
+  .username {
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .sport_big {
+    border-radius: 10px;
+    width: 165px;
+    height: 205px;
+    display: table;
+    text-align: center;
+   
+  }
+  .sport_small{
+    border-radius: 10px;
+    width: 165px;
+    height: 162px;
+    display: table;
+    text-align: center;
+   
+  
+  }
+  #sport{
+    font-family: 'Kanit', sans-serif;
+  }
+  .text_sport{
+      color: white;
+      margin-top: 10px;
+  }
+
+
+  .food{
+
+    border-radius: 100px;
+    width: 165px;
+    height: 205px;
+    display: table;
+    text-align: center;
+
+  }
+  
+  .food_cover{
+
+
+    padding: 0px 15px;
+    margin: 10px 0px;
+
+  }
+  .food_content{
+
+
+      color: #030c40;
+
+
+
+  }
+  .text_food{
+
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 40px;
+    margin-top: 5px;
+
+
+  }
+ 
+  .text_bmi{
+
+    color: #8E97FD;
+  }
+
+  .btn-start{
+    text-align: center;
+    color: white;
+    width: 90%;
+    
+    font-family: 'Kanit', sans-serif;
+    border-radius: 38px;
+    background: #8E97FD;
+margin-bottom: 15px;
+
+  }
+  .card{
+  color: black;
+  background-color: #F5F5F9;
+
+
+
+  }
+  .button.fab, ons-fab.fab, ons-speed-dial-item.fab {   background-color: white;   }
+
+  
