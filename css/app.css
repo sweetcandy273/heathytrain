@@ -56,9 +56,13 @@ font-family: 'Kanit', sans-serif;
   }
 
 /* home */
+.page__content h4, .page__content h3 {
+  font-family: 'Kanit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
   
-.home{
-background-color: #FFFFFF;
+.text{
+
 font-family: 'Kanit', sans-serif;
 }
       
@@ -112,3 +116,7 @@ margin-bottom: 15px;
 text-align: center;
   margin-top: 10px;
 }
+
+.button.fab, ons-fab.fab, ons-speed-dial-item.fab {
+  background-color: white;
+  }
