@@ -1,0 +1,114 @@
+
+.sport_cover {
+    padding: 0px 15px;
+    margin: 10px 0px;
+  }
+  
+  .username {
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .sport_big {
+    border-radius: 10px;
+    width: 165px;
+    height: 205px;
+    display: table;
+    text-align: center;
+   
+  }
+  .sport_small{
+    border-radius: 10px;
+    width: 165px;
+    height: 162px;
+    display: table;
+    text-align: center;
+   
+  
+  }
+  #sport{
+    font-family: 'Kanit', sans-serif;
+  }
+  .text_sport{
+      color: white;
+      margin-top: 10px;
+  }
+  .tabbar_showsport{
+    background: #4C53B4;
+
+  }
+  .page__showsport_background{
+    background-color: #4C53B4;
+  }
+.text_f{
+  font-family: 'Kanit', sans-serif;
+
+}
+
+.sport_details {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.sport_info {
+  padding: 0px 10px;
+  font-size: 14px;
+}
+.sport_name{
+  font-size: 30px;
+  margin-left: 10px;
+}
+.trainer{
+  font-size: 30px;
+  padding: 0px 10px;
+  margin-top: 15px;
+}
+.trainer_pic{
+  border-radius: 10px;
+
+}
+.trainer_cover{
+  padding: 0px 0px;
+    margin: 0px 0px;
+    text-align: center;
+}
+.trainer_name{
+  text-align: left;
+  margin-left: 20px;
+  font-size: 20px;
+
+}
+.text_hr{
+  font-size: 15px;
+}
+.button.fab, ons-fab.fab, ons-speed-dial-item.fab {
+background-color: white;
+}
+.train1{
+  width: 100%;
+  
+}
+.train_picname{
+  font-size: 30px;
+  margin-left: 10px;
+}
+.train_c{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.train_sportname{
+  font-size: 22px;
+  margin-top: 15px;
+}
+.co_hr{
+  color: #C8D8EB;
+}
+.train_details {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
