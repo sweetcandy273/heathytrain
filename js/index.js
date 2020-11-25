@@ -33,7 +33,6 @@ function openshowsport(id) {
                 $(".sport_details").append(doc.data().sport_d)
             }
 
-
         });
     });
     db.collection("train").get().then((querySnapshot) => {
