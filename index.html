@@ -36,9 +36,10 @@
 
             <div style="margin-top: 40px;" class="text">
           
-                <h4 class="text-center">Heathy
-                    <img src="img/logo2.png" alt="" width="30px">
-                    Trian</h4>
+                <div id="showlogo2">
+
+                </div>
+                
                 <div class="container" style="margin-top: 15px;">
                     <!-- ดึงชื่อ user -->
                     <h3>Hi User</h3>
@@ -49,8 +50,11 @@
             </div>
             <ons-row class="home_cover">
                 <ons-col style="margin-right: 5px;">
-                    <div class="activity_home" style="background-color: #8E97FD;text-align: right;" onclick="">
-                        <img src="/img/sport12.png" alt="" width="60%">
+                    <div class="activity_home" style="background-color: #8E97FD;text-align: right;" onclick="" >
+                        <div id="showsport12">
+                            
+                        </div>
+                        
 
                         <h6 class="activity_home_title" style="color: white;">การออกกำลังกาย</h6>
                         <div class="activity_home_detail" style="color: white;">COURSE</div>
@@ -62,8 +66,9 @@
                 </ons-col>
                 <ons-col style="margin-left: 5px;">
                     <div class="activity_home" style="background-color: #FFC97E; text-align: right; " onclick="">
-                        <img src="/img/food1.png" alt="" width="70%" style="border-radius: 10px;">
+                       <div id="showfood1">
 
+                       </div>
                         <h6 class="activity_home_title">รายการอาหารแนะนำสำหรับการบริโภค</h6>
                         <div class="container">
                             <ons-button class="btn-start btn-dark" onclick="home()">START</ons-button>
@@ -81,7 +86,11 @@
                         </div>
                     </ons-col>
                     <ons-col style="text-align: right;">
-                        <img src="/img/chat.png" alt="" width="15%">
+
+                        <div id="showchat">
+
+                        </div>
+                        
                     </ons-col>
                 </div>
             </ons-row>
@@ -107,7 +116,6 @@
     </template>
 
 
-  
     <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
@@ -122,8 +130,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-
     <script src="/js/home.js"></script>
 
 </body>
