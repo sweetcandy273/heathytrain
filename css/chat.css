@@ -1,0 +1,360 @@
+
+.sport_cover {
+  padding: 0px 15px;
+  margin: 10px 0px;
+}
+
+.username {
+  text-align: center;
+  color: white;
+  width: 100%;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.sport_big {
+  border-radius: 10px;
+  width: 340px;
+  height: 100px;
+  display: table;
+  text-align: center;
+ 
+}
+.sport_small{
+  border-radius: 10px;
+  width: 165px;
+  height: 162px;
+  display: table;
+  text-align: center;
+ 
+
+}
+#sport{
+  font-family: 'Kanit', sans-serif;
+}
+.text_sport{
+    color: white;
+    margin-top: 10px;
+}
+.tabbar_showsport{
+  background: #4C53B4;
+
+}
+.page__showsport_background{
+  background-color: #4C53B4;
+}
+.text_f{
+font-family: 'Kanit', sans-serif;
+
+}
+
+.sport_details {
+font-size: 18px;
+text-align: justify;
+margin-bottom: 10px;
+}
+.sport_info {
+padding: 0px 10px;
+font-size: 14px;
+}
+.sport_name{
+font-size: 30px;
+margin-left: 10px;
+}
+.trainer{
+font-size: 30px;
+padding: 0px 10px;
+margin-top: 15px;
+}
+.trainer_pic{
+border-radius: 10px;
+
+}
+.trainer_cover{
+padding: 0px 0px;
+  margin: 0px 0px;
+  text-align: center;
+}
+.trainer_name{
+text-align: left;
+margin-left: 20px;
+font-size: 20px;
+
+}
+.text_hr{
+font-size: 15px;
+}
+.button.fab, ons-fab.fab, ons-speed-dial-item.fab {
+background-color: white;
+}
+.train1{
+width: 100%;
+
+}
+.train_picname{
+font-size: 30px;
+margin-left: 10px;
+}
+.train_c{
+font-size: 20px;
+margin-top: 20px;
+margin-left: 20px;
+}
+.train_sportname{
+font-size: 22px;
+margin-top: 15px;
+}
+.co_hr{
+color: #C8D8EB;
+}
+.train_details {
+font-size: 18px;
+text-align: justify;
+margin-bottom: 10px;
+}
+
+/* welcome */
+
+.welcome{
+background-color: #8E97FD;
+font-family: 'Kanit', sans-serif;
+  }
+  .btn-getstart{
+    color: #3F414E;
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 38px;
+    background: #EBEAEC;
+
+  }
+
+/* home */
+.page__content h4, .page__content h3 {
+  font-family: 'Kanit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+  
+.text{
+
+font-family: 'Kanit', sans-serif;
+}
+      
+.activity_home {
+border-radius: 10px;
+width: 165px;
+height: 230px;
+display: table;
+      
+}
+.home_cover {
+  padding: 0px 15px;
+  margin: 10px 0px;
+}
+.chat_home {
+  border-radius: 10px;
+  width: 100%;
+  display: table;
+  padding: 15px 15px;
+  
+  }
+
+  .activity_home_title{
+    margin-left: 10px;
+    text-align: start;
+  }
+  .activity_home_detail{
+    margin-left: 10px;
+    text-align: start;
+ 
+  }
+  .btn-start{
+    text-align: center;
+    color: #3F414E;
+    width: 60%;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 38px;
+    background: #EBEAEC;
+margin-bottom: 15px;
+
+  }
+  .bmi_home {
+    border-radius: 10px;
+    width: 100%;
+    display: table;
+    padding: 15px 15px;
+    
+    }
+ 
+.icon_tab{
+text-align: center;
+  margin-top: 10px;
+}
+
+.button.fab, ons-fab.fab, ons-speed-dial-item.fab {
+  background-color: white;
+  }
+
+
+  /* mycouse */
+
+  .mycouse_title{
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .mycouse_detail{
+    font-family: 'Kanit', sans-serif;
+ color: darkgray;
+    margin-left: 15px;
+  }
+
+
+div.chat-message
+{
+  position: relative;
+  margin-top: 15px;
+  z-index: 10;
+}
+
+div.chat-message div.chat
+{
+  position: relative;
+  width: 340px;
+  height: 630px;
+  background: #d6c2ff;
+  margin-left: 16px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  /* border-top-style: ; */
+}
+
+div.chat div.chat-content div.friend
+{
+  position: relative;
+  width: 60%;
+  margin-left: 42px;
+  height: auto;
+  display: inline-block;
+  background: #fff;
+  padding: 10px;
+  padding-bottom: 15px;
+  box-shadow: 2px 2px 20px -2px rgba(60,51,176,0.2);
+  color: rgba(60,51,176,1);
+  border-radius: 10px;
+  
+}
+
+div.chat div.chat-content div.you
+{
+  position: relative;
+  float: right;
+  margin-right: 42px;
+  width: 55%;
+  height: auto;
+  background: #ffffff;
+  display: inline-block;
+  padding: 10px;
+  padding-bottom: 10px;
+  color: rgba(60,51,176,1);
+  border-radius: 15px;
+  box-shadow: 2px 2px 20px rgba(60,51,176,0.2),
+              inset -10px -10px 55px rgba(255,255,255,0.1);
+        
+} 
+
+.picture{
+  position: absolute;
+width: 50px;
+height: 50px;
+left: 288px;
+top: 87px;
+border-radius: 35px;
+}
+
+.picture1{
+  position: absolute;
+width: 50px;
+height: 50px;
+left: 288px;
+top: 480px;
+border-radius: 35px;
+}
+
+.picture2{
+  position: absolute;
+width: 50px;
+height: 50px;
+right: 288px;
+top: 163px;
+border-radius: 35px;
+}
+
+div.msg-box
+{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  /* border-top: 1px solid rgba(60,51,176,0.1); */
+  overflow: hidden;
+  padding: 20px;
+}
+
+div.msg-box .ip-msg
+{
+  width: 95%;
+  font-size: 10px;
+  margin-left: 5px;
+   padding: 15px;
+  /* padding-right: 30%;
+  padding-left: 10%;;  */
+  color: rgba(60,51,176,0.9);
+  border: none;
+  background: white;
+  border-radius: 15px;
+}
+.border1{
+  border-bottom: 3px solid #4C53B4;
+}
+
+/* Group 6856 */
+.exit{
+  position: absolute;
+background: #FFFFFF;
+border: 1px solid #EBEAEC;
+box-sizing: border-box;
+border-radius: 38px;
+transform: rotate(-180deg);
+/* Vector 13 */
+width: 42.87px;
+height: 42.72px;
+left: 315px;
+top: 45px;
+
+border: 2.3px solid #3F414E;
+box-sizing: border-box;
+}
+
+.line{
+ 
+background: #D6C2FF;
+border-radius: 20px;
+
+}
+
+.hidden{
+  display: none;
+}
+
+/* .point{
+ 
+width: 9px;
+height: 9px;
+left: 163px;
+top: 150px;
+
+background: #2AC44B;
+
+} */
