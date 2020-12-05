@@ -17,22 +17,16 @@ var db = firebase.firestore();
 function openshowsport(id) {
     db.collection("sport").get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
-
-
-
             if (doc.data().sport_id == id) {
 
                 const result1 =
-                    `
-                <img src="${doc.data().URLsport}" width="60%" style="margin-top: 50px;">`
+                    ` <img src="${doc.data().URLsport}" width="60%" style="margin-top: 50px;">`
                 $(".trailer").append(result1)
-
 
                 $(".h_name").append(doc.data().sport_name)
                 $(".sport_name").append(doc.data().sport_name)
                 $(".sport_details").append(doc.data().sport_d)
             }
-
         });
     });
     db.collection("train").get().then((querySnapshot) => {
@@ -99,12 +93,17 @@ function openshowsport(id) {
 
         });
     });
-    document.querySelector('#myNavigator').pushPage('views/showsport.html');
+    document.querySelector('#navigator_sport').pushPage('views/showsport.html');
+}
+
+function goBacktohome() {
+
+    window.location.href = "index.html";
 }
 
 function goBack() {
 
-    document.querySelector('#myNavigator').popPage()
+    document.querySelector('#navigator_sport').popPage()
 
 }
 function opentainer(id,) {
@@ -122,23 +121,23 @@ function opentainer(id,) {
 
 
                 const result2 =
-             
-                `<div class="train_sportname">${doc.data().sport_name}</div>
+
+                    `<div class="train_sportname">${doc.data().sport_name}</div>
                      <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
                 $(".train_c").append(result2)
 
                 const result3 =
-                `<div class="train_sportname">${doc.data().sport_name1}</div>
+                    `<div class="train_sportname">${doc.data().sport_name1}</div>
                 <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
                 $(".train_c").append(result3)
 
                 const result4 =
-                `<div class="train_sportname">${doc.data().sport_name2}</div>
+                    `<div class="train_sportname">${doc.data().sport_name2}</div>
                 <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
                 $(".train_c").append(result4)
-                
+
                 const result5 =
-                `<div class="train_sportname">${doc.data().sport_name3}</div>
+                    `<div class="train_sportname">${doc.data().sport_name3}</div>
                 <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
                 $(".train_c").append(result5)
 
@@ -146,20 +145,13 @@ function opentainer(id,) {
 
             }
 
-       
-
-
-
-
-
-
         });
     });
-    document.querySelector('#myNavigator').pushPage('views/trainer.html', { data: { title: id } });
+    document.querySelector('#navigator_sport').pushPage('views/trainer.html', { data: { title: id } });
 }
 function goBacktainer() {
 
-    document.querySelector('#myNavigator').popPage()
+    document.querySelector('#navigator_sport').popPage()
 
 }
 
