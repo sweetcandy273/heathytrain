@@ -86,6 +86,9 @@ function gofood() {
 }
 function gosport() {
     window.location.href = "sport.html";
+
+
+
 }
 function goBack() {
     document.querySelector('#navigator_home').popPage()
