@@ -5,9 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Document</title>
+    <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-
 
 
     <link rel="stylesheet" href="lib/onsenui/onsenui.css" />
@@ -31,42 +30,114 @@
 
 
 <body>
-    <ons-navigator id="myNavigator" page="sport.html"></ons-navigator>
-    <template id="sport.html">
-        <ons-page id="sport">
-
-            <div style="margin-top: 50px; text-align: center;font-size: 35px;">Heathy Train</div>
-
-            <ons-row class="sport_cover">
-
-               
-                    <div class="sport_big" onclick="openHome()">
-                        <img src="/img/sport1.png" alt="" width="70%" style="margin-top: 10px;">
-                    </div>
-               
-
-            </ons-row>
-
-            <div style=" text-align: center; font-size: 20px;">ออกกำลังกายเมื่อคุณอยากออก</div>
-            <div style=" text-align: center; font-size: 15px;">เลือดเทรนเนอร์มืออาชีพเพื่อดูดลตัวคุณเองสิ!</div>
-
-            <ons-button modifier="large" class="button-margin">SIGN UP</ons-button>
-            <div style=" text-align: center; font-size: 10px;">ALREADY HAVE AN ACCOUNT? <ons-button modifier="quiet" class="button-margin">LOGIN</ons-button></div>
+    <ons-navigator id="myNavigator" page="signin_signup.html"></ons-navigator>
+    <template id="signin_signup.html">
+        <ons-page id="signin_signup">
             
+
+
+
+            <div class="picture" align="center">
+
+                <div style="margin-top: 50px; text-align: center;font-size: 35px;">Heathy Train</div>
+
+                <img src="/img/sport1.png" alt="" width="70%" style="margin-top: 10px; ">
+
+            </div>
+
+
+            <div>
+                <div style=" text-align: center; font-size: 20px; padding-top: 50px;">ออกกำลังกายเมื่อคุณอยากออก</div>
+                <div style=" text-align: center; font-size: 15px;">เลือดเทรนเนอร์มืออาชีพเพื่อดูด้วยตัวคุณเองสิ!</div>
+            </div>
+
+            <div  style="padding-top: 50px;">
+                <button class="button--large--cta" style="width: 95%; margin: 0 auto;" id="signup">SIGN UP</button>
+            </div>
+
+            <div style=" text-align: center; font-size: 10px;">
+                <ons-button modifier="quiet"class="button-margin">ALREADY HAVE AN ACCOUNT? LOGIN</ons-button>
+            </div>
+
 
 
 
         </ons-page>
     </template>
 
-    <template id="signin.html">
-    
-    </template>
-
     <template id="signup.html">
+        <div style=" text-align: center; font-size: 20px;">สร้างบัญชี</div>
+    
+        <ons-button modifier="large" class="button-margin">Continue with facebook</ons-button>
+        <ons-button modifier="large" class="button-margin">Continue with google</ons-button>
+    
+        <div style=" text-align: center; font-size: 20px;">OR LOG IN WITH EMAIL</div>
+    
+        <div class="form-group">
+            <label for="" style="color: white">Email address</label>
+            <input type="email" class="form-control" name="" id="email" aria-describedby="emailHelpId" placeholder="" />
+        </div>
+    
+        <div class="form-group">
+            <label for="" style="color: white">Email address</label>
+            <input type="email" class="form-control" name="" id="email" aria-describedby="emailHelpId" placeholder="" />
+        </div>
+    
+        <div class="form-group">
+            <label for="" style="color: white">Password</label>
+            <input type="password" class="form-control" name="" id="Password" aria-describedby="emailHelpId"
+                placeholder="" />
+        </div>
+    
+        <ons-button modifier="large" class="button-margin">GRT STARTED</ons-button>
+    
     
     </template>
 
+    <template id="signin.html">
+        <div style=" text-align: center; font-size: 20px;">ยินดีต้อนรับกลับ!</div>
+
+
+        <div>
+        <ons-button modifier="large" class="button-margin">Continue with facebook</ons-button>
+        </div>
+
+        <div>
+        <ons-button modifier="large" class="button-margin">Continue with google</ons-button>
+        </div>
+
+        <div style=" text-align: center; font-size: 20px;">OR LOG IN WITH EMAIL</div>
+    
+        <div class="form-group">
+            <label for="" style="color: white">Email address</label>
+            <input type="email" class="form-control" name="" id="email" aria-describedby="emailHelpId" placeholder="" />
+        </div>
+    
+        <div class="form-group">
+            <label for="" style="color: white">Password</label>
+            <input type="password" class="form-control" name="" id="password" placeholder="" />
+        </div>
+    
+        <ons-button modifier="large" class="button-margin">LOG IN</ons-button>
+    
+        <ons-button modifier="quiet" class="button-margin">Forgot Password</ons-button>
+        </div>
+    
+        <div style=" text-align: center; font-size: 10px;">ALREADY HAVE AN ACCOUNT? <ons-button modifier="quiet"
+                class="button-margin">LOGIN</ons-button>
+        </div>
+    
+    
+    
+    
+    
+    
+    </template>
+    
+    
+
+    
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -77,6 +148,12 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="/js/index.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+    <script src="firebase.js"></script>
+    <script src="signupAndsignin.js"></script>
+    
 
 
 </body>

@@ -29,7 +29,31 @@
    
   
   }
-  #sport{
+  #signin_signup{
     font-family: 'Kanit', sans-serif;
   }
+  .button--large--cta{
+    color:#fff;/*สีตัวหนังสือในปุ่ม*/
+		background:#33F;/*พื้นหลังปุ่ม*/
+		border-color:#6962EC;/*เส้นขอบปุ่ม*/
+    border-width: 0.5px;
+    border-radius: 20;
+  }
+.button-facebook{
+  color:#fff;/*สีตัวหนังสือในปุ่ม*/
+  background:blue;/*พื้นหลังปุ่ม*/
+  border-color:#6962EC;/*เส้นขอบปุ่ม*/
+  border-width: 0.5px;
+  border-radius: 20;
+}
+.button-google{
+  color:#fff;/*สีตัวหนังสือในปุ่ม*/
+  background:red;/*พื้นหลังปุ่ม*/
+  border-color:#6962EC;/*เส้นขอบปุ่ม*/
+  border-width: 0.5px;
+  border-radius: 20;
+}
+ 
+
+ 
   
