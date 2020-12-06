@@ -87,8 +87,9 @@ function gofood() {
 }
 function gosport() {
     window.location.href = "sport.html";
-
-
+}
+function goBMI(){
+    window.location.href = "bmi.html";
 
 }
 function goBack() {
