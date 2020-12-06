@@ -8,22 +8,26 @@ $(function () {
             photoUrl = user.photoURL;
             console.log(displayName, email, photoUrl);
 
-            $("#username").text(email);
-            $("#displayname").text(displayName);
-            $("#photo").attr("src",photoUrl);
+      
+
+            // $("#username").text(email);
+            // $("#displayname").text(displayName);
+            // $("#photo").attr("src",photoUrl);
 
         } else {
             window.location.href = 'signin.html';
         }
     });
 
-    $("#signout").click(function () {
+   
+
+})
+
+ function logout() {
         firebase.auth().signOut()
             .then(function () {
-                // Sign-out successful.
+                window.location.href = 'signin.html';
             }).catch(function (error) {
                 // An error happened.
             });
-    });
-
-})
+    }
