@@ -24,5 +24,5 @@ function computeBMI() {
     // document.getElementById("answer").value = output; 
 }
 function goBacktohome() {
-    window.location.href = "index.html";
+    window.location.href = "home.html";
 }

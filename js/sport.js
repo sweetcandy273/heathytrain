@@ -98,7 +98,7 @@ function openshowsport(id) {
 
 function goBacktohome() {
 
-    window.location.href = "index.html";
+    window.location.href = "home.html";
 }
 
 function goBack() {

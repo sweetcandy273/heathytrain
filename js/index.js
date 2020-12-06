@@ -79,7 +79,7 @@ db.collection("home").get().then((querySnapshot) => {
 
 
 function gohome() {
-    window.location.href = "index.html";
+    window.location.href = "home.html";
 }
 
 function gofood() {
@@ -98,6 +98,10 @@ function gochat(){
 }
 function goBack() {
     document.querySelector('#navigator_home').popPage()
+}
+function gochecklogout(){
+    window.location.href = "checklogout.html";
+
 }
 
 

@@ -88,7 +88,7 @@ db.collection("food").get().then((querySnapshot) => {
 
 
 function goBacktohome() {
-    window.location.href = "index.html";
+    window.location.href = "home.html";
 }
 
 

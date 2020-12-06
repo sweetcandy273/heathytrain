@@ -1,3 +1,18 @@
+var firebaseConfig = {
+    apiKey: "AIzaSyDY2FfrCiu5pX3-CuDqaG2IF_sureVZ_Cw",
+    authDomain: "healtytrain.firebaseapp.com",
+    projectId: "healtytrain",
+    storageBucket: "healtytrain.appspot.com",
+    messagingSenderId: "785705447786",
+    appId: "1:785705447786:web:79d0b031e57be237b53513",
+    measurementId: "G-ZHF4E3X6WS"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+  
+
 $(function () {
 
     firebase.auth().onAuthStateChanged(function (user) {
@@ -6,9 +21,9 @@ $(function () {
             displayName = user.displayName;
             email = user.email;
             photoUrl = user.photoURL;
-            console.log(displayName, email, photoUrl);
+            console.log(displayName, email, photoUrl)
 
-      
+
 
             // $("#username").text(email);
             // $("#displayname").text(displayName);
@@ -19,15 +34,18 @@ $(function () {
         }
     });
 
-   
+
 
 })
 
- function logout() {
-        firebase.auth().signOut()
-            .then(function () {
-                window.location.href = 'signin.html';
-            }).catch(function (error) {
-                // An error happened.
-            });
-    }
+function logout() {
+    firebase.auth().signOut()
+        .then(function () {
+            window.location.href = 'signin.html';
+        }).catch(function (error) {
+            // An error happened.
+        });
+}
+function gohome() {
+    window.location.href = "home.html";
+}

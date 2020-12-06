@@ -17,7 +17,7 @@ db.collection("firstpage").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         if (doc.data().imgname == "firstpage") {
 
-            const result =`<img src="${doc.data().link}" alt="" width="70%" style="margin-top: 10px; ">`
+            const result =`<img src="${doc.data().link}" alt="" width="100%" style="margin-top: 10px; ">`
            
             $("#showimgfirstpage").append(result)
 

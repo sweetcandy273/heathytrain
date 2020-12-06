@@ -105,7 +105,7 @@ function goconversation(){
 }
 
 function goBacktohome() {
-  window.location.href = "index.html";
+  window.location.href = "home.html";
 }
 function goBacktochat() {
   window.location.href = "chat.html";
