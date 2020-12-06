@@ -92,6 +92,10 @@ function goBMI(){
     window.location.href = "bmi.html";
 
 }
+function gochat(){
+    window.location.href = "chat.html";
+
+}
 function goBack() {
     document.querySelector('#navigator_home').popPage()
 }
