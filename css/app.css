@@ -135,3 +135,46 @@ text-align: center;
  color: darkgray;
     margin-left: 15px;
   }
+
+  /* ของน้องผึ้ง */
+
+  #signingoogle{
+    background:red;
+}
+#getstart{
+    border-color:#6962EC;
+    background:#6962EC;
+    border-radius: 25px;
+    width: 300px;
+}
+#signinfacebook{
+    border-color:#6962EC;
+    background:#6962EC;
+    border-radius: 25px;
+    
+}
+
+#gethome{
+    border-color:#6962EC;
+    background:#6962EC;
+    border-radius: 25px;
+    width: 300px;
+}
+#signingoogle{
+    color:black;
+    border-color:#778899;
+    background: white;
+    border-radius: 25px;
+    
+}
+#signinemail{
+    border-color:#6962EC;
+    background:#6962EC;
+    border-radius: 25px;
+   
+}
+#alert alert-danger{
+    background: white;
+}
+
+
