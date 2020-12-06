@@ -2,9 +2,39 @@
     background:red;
 }
 #getstart{
+    border-color:#6962EC;
     background:#6962EC;
+    border-radius: 25px;
+    width: 300px;
 }
-.container{
-    /* background:#F8F8FF; */
-
+#signinfacebook{
+    border-color:#6962EC;
+    background:#6962EC;
+    border-radius: 25px;
+    width: 350px;
+}
+body{
+    background: #E6E6FA;  
+}
+#gethome{
+    border-color:#6962EC;
+    background:#6962EC;
+    border-radius: 25px;
+    width: 300px;
+}
+#signingoogle{
+    color:black;
+    border-color:#778899;
+    background: white;
+    border-radius: 25px;
+    width: 350px;
+}
+#signinemail{
+    border-color:#6962EC;
+    background:#6962EC;
+    border-radius: 25px;
+   
+}
+#alert alert-danger{
+    background: white;
 }
