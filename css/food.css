@@ -1,37 +1,4 @@
 
-.sport_cover {
-    padding: 0px 15px;
-    margin: 10px 0px;
-  }
-  
-  .username {
-    text-align: center;
-    color: white;
-    width: 100%;
-    font-size: 12px;
-    margin-top: 5px;
-  }
-  
-  .sport_big {
-    border-radius: 10px;
-    width: 165px;
-    height: 205px;
-    display: table;
-    text-align: center;
-   
-  }
-  .sport_small{
-    border-radius: 10px;
-    width: 165px;
-    height: 162px;
-    display: table;
-    text-align: center;
-   
-  
-  }
-  #sport{
-    font-family: 'Kanit', sans-serif;
-  }
   .text_food1{
       color: white;
       margin-top: 10px;
@@ -41,7 +8,7 @@
   .food{
 
     border-radius: 100px;
-    width: 165px;
+
     height: 205px;
     display: table;
     text-align: center;
