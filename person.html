@@ -33,46 +33,70 @@
 
 
     <ons-page id="person">
+
         <ons-fab position="top left" style="color: #03174C;" onclick="goBacktohome()">
             <i class="material-icons md-48" style="margin-top: 16px;">arrow_back</i>
         </ons-fab>
 
 
+        <div class="container" style="margin-top: 50px; text-align: center;">
+
+            <div id="showimguser">
 
 
-        <p class="mycouse_title">ชื่อ</p>
-        <p class="mycouse_detail">สกุล</p>
+            </div>
 
-        <h4 style="margin-left: 15px;">My Couse</h4>
+            <p class="mycouse_title">ชื่อ</p>
+<p class="mycouse_detail">กรุณาใส่ชื่อของคุณ</p>
+        </div>
+
+
+
+
 
         <div class="text" id="show_mycouse">
-
-
-            <!-- เอาอันนี้ใส่ในjs -->
             <ul class="list-group text">
                 <li class="list-group-item">
                     <ons-row id="">
-                        <ons-col width="50px">
-                            <img src="img/icon_play.png" alt="" width="100%">
-                        </ons-col>
                         <ons-col style="margin-left: 15px;">
                             <ons-row>
-                                (ชื่อคอร์ส)
+                            ข้อมูลการชำระเงิน
                             </ons-row>
-                            <ons-row style="color: darkgrey;">
-
-                                (เวลา: ?? HR ?? MIN)
+                        </ons-col>
+                    </ons-row>
+                </li>
+                <li class="list-group-item">
+                    <ons-row id="">
+                        <ons-col style="margin-left: 15px;">
+                            <ons-row>
+                            ชวนเพื่อน
+                            </ons-row>
+                        </ons-col>
+                    </ons-row>
+                </li>
+                <li class="list-group-item">
+                    <ons-row id="">
+                        <ons-col style="margin-left: 15px;">
+                            <ons-row>
+                           การตั้งค่า
+                            </ons-row>
+                        </ons-col>
+                    </ons-row>
+                </li>
+                <li class="list-group-item">
+                    <ons-row id="">
+                        <ons-col style="margin-left: 15px;">
+                            <ons-row>
+                            ศูนย์การข่วยเหลือ
                             </ons-row>
                         </ons-col>
                     </ons-row>
                 </li>
             </ul>
-
-
-
-
         </div>
-        <div class="container">
+
+
+        <div class="container" style="margin-top: 20px;">
             <ons-button class="btn-start" id="" onclick="gochecklogout()" style="width: 100%; background-color: red;">
                 Logout</ons-button>
         </div>
