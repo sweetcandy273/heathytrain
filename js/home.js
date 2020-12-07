@@ -41,7 +41,7 @@ $(function () {
 function logout() {
     firebase.auth().signOut()
         .then(function () {
-            window.location.href = 'signin.html';
+            window.location.href = 'waiting.html';
         }).catch(function (error) {
             // An error happened.
         });

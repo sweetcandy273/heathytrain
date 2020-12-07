@@ -20,22 +20,31 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
 </head>
 
-<body>
-    <div style="margin-top: 40px; text-align: center; font-family: 'Kanit', sans-serif;">
-        <h1>Do you want to Logout?</h1>
-        <div class="container" style="margin-top: 20px;">
-            <ons-button class="btn-start" id="" onclick="gohome()" style="width: 50%;">Cancle</ons-button>
-            <ons-button class="btn-start" id="" onclick="logout()" style="width: 50%; background-color: red;">Logout</ons-button>
-        </div>
+<body class="welcome">
+    <div style="margin-top: 40px;">
+
+
+
+
+
+    </div>
+    <div id="showpic_welcome">
 
     </div>
 
+    <div class="container">
+
+        <p class="text-center">
+
+            <ons-button class="btn-getstart" onclick="gofirstpage()">Get Start</ons-button>
+        </p>
+    </div>
 
 
 
@@ -54,7 +63,22 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="js/home.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/service-worker.js"></script>
 
+
+    <script>
+
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+              .then((reg) => {
+                console.log('Service worker registered.', reg);
+              });
+          });
+        }
+      </script>
 
 </body>
+
+</html>
