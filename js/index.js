@@ -88,6 +88,9 @@ function gofood() {
 function gosport() {
     window.location.href = "sport.html";
 }
+function goperson() {
+    window.location.href = "person.html";
+}
 function goBMI(){
     window.location.href = "bmi.html";
 
@@ -99,9 +102,12 @@ function gochat(){
 function goBack() {
     document.querySelector('#navigator_home').popPage()
 }
+
 function gochecklogout(){
     window.location.href = "checklogout.html";
-
+}
+function goBacktohome() {
+    window.location.href = "home.html";
 }
 
 

@@ -122,23 +122,71 @@ function opentainer(id,) {
 
                 const result2 =
 
-                    `<div class="train_sportname">${doc.data().sport_name}</div>
-                     <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
+                    ` <ons-row class="">
+                    <ons-col-3 class="">
+                        <div class="train_sportname">${doc.data().sport_name}</div>
+                        <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH </p>
+                    </ons-col-3>
+            
+                    <ons-col class="" style="margin-left: 70px; margin-top: 20px; ">
+                        <ons-fab style="color: #03174C; margin-right: auto;" onclick="gosport()">
+                            <i class="material-icons md-36" style="margin-top: 16px;">add</i>
+                    </ons-col>
+            
+            
+                </ons-row>
+               `
                 $(".train_c").append(result2)
 
                 const result3 =
-                    `<div class="train_sportname">${doc.data().sport_name1}</div>
-                <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
+                    ` <ons-row class="">
+                    <ons-col-3 class="">
+                        <div class="train_sportname">${doc.data().sport_name1}</div>
+                        <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH </p>
+                    </ons-col-3>
+            
+                    <ons-col class="" style="margin-left: 70px; margin-top: 20px; ">
+                        <ons-fab style="color: #03174C; margin-right: auto;" onclick="gosport()">
+                            <i class="material-icons md-36" style="margin-top: 16px;">add</i>
+                    </ons-col>
+            
+            
+                </ons-row>
+               `
                 $(".train_c").append(result3)
 
                 const result4 =
-                    `<div class="train_sportname">${doc.data().sport_name2}</div>
-                <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
+                    ` <ons-row class="">
+                    <ons-col-3 class="">
+                        <div class="train_sportname">${doc.data().sport_name2}</div>
+                        <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH </p>
+                    </ons-col-3>
+            
+                    <ons-col class="" style="margin-left: 70px; margin-top: 20px; ">
+                        <ons-fab style="color: #03174C; margin-right: auto;" onclick="gosport()">
+                            <i class="material-icons md-36" style="margin-top: 16px;">add</i>
+                    </ons-col>
+            
+            
+                </ons-row>
+               `
                 $(".train_c").append(result4)
 
                 const result5 =
-                    `<div class="train_sportname">${doc.data().sport_name3}</div>
-                <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH</p>`
+                    ` <ons-row class="">
+                    <ons-col-3 class="">
+                        <div class="train_sportname">${doc.data().sport_name3}</div>
+                        <p class="co_hr">${doc.data().train_hr} - ${doc.data().train_c}BTH </p>
+                    </ons-col-3>
+            
+                    <ons-col class="" style="margin-left: 70px; margin-top: 20px; ">
+                        <ons-fab style="color: #03174C; margin-right: auto;" onclick="gosport()">
+                            <i class="material-icons md-36" style="margin-top: 16px;">add</i>
+                    </ons-col>
+            
+            
+                </ons-row>
+               `
                 $(".train_c").append(result5)
 
 
