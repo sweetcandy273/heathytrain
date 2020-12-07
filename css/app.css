@@ -2,44 +2,6 @@
 #text{
   font-family: 'Kanit', sans-serif;
 }
-.sport_cover {
-    padding: 0px 15px;
-    margin: 10px 0px;
-  }
-  
-  .username {
-    text-align: center;
-    color: white;
-    width: 100%;
-    font-size: 12px;
-    margin-top: 5px;
-  }
-  
-  .sport_big {
-    border-radius: 10px;
-    width: 165px;
-    height: 205px;
-    display: table;
-    text-align: center;
-   
-  }
-  .sport_small{
-    border-radius: 10px;
-    width: 165px;
-    height: 162px;
-    display: table;
-    text-align: center;
-   
-  
-  }
-  #sport{
-    font-family: 'Kanit', sans-serif;
-  }
-  .text_sport{
-      color: white;
-      margin-top: 10px;
-  }
-
 /* welcome */
 .icon_waiting{
 
@@ -73,10 +35,8 @@ font-family: 'Kanit', sans-serif;
       
 .activity_home {
 border-radius: 10px;
-width: 165px;
-height: 230px;
-display: table;
-      
+width: 100%;
+height: 100%; 
 }
 .home_cover {
   padding: 0px 15px;
@@ -143,7 +103,7 @@ text-align: center;
 
   /* ของน้องผึ้ง */
 
-#signingoogle{
+  #signingoogle{
     background:red;
 }
 #getstart{
@@ -171,13 +131,11 @@ text-align: center;
     background: white;
     border-radius: 25px;
     
-    
 }
 #signinemail{
     border-color:#6962EC;
     background:#6962EC;
     border-radius: 25px;
-  
    
 }
 
@@ -185,12 +143,4 @@ text-align: center;
 #alert alert-danger{
     background: white;
 }
-
-#ResetPassword{
-  border-color:#6962EC;
-    background:#6962EC;
-    border-radius: 25px;
-   
-}
-
 

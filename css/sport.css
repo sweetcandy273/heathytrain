@@ -14,7 +14,6 @@
   
   .sport_big {
     border-radius: 10px;
-    width: 165px;
     height: 205px;
     display: table;
     text-align: center;
@@ -22,7 +21,6 @@
   }
   .sport_small{
     border-radius: 10px;
-    width: 165px;
     height: 162px;
     display: table;
     text-align: center;
