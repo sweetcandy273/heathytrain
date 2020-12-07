@@ -95,7 +95,9 @@ db.collection("home").get().then((querySnapshot) => {
 
     })
 });
-
+function gofirstpage() {
+    window.location.href = "firstpage.html";
+}
 
 function gohome() {
     window.location.href = "home.html";

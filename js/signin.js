@@ -11,6 +11,8 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
+
+
 $(function () {
 
   firebase.auth().onAuthStateChanged(function (user) {
@@ -33,7 +35,9 @@ $(function () {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
+
         console.log(errorCode);
+
         $("#error").text(errorMessage);
 
       });
@@ -61,6 +65,34 @@ $(function () {
       $("#error").text(errorMessage);
 
     });
+
+
+  });
+
+
+  $("#ResetPassword").click(function () {
+
+    var auth = firebase.auth();
+    var email = $("#email").val();
+
+    if (email != "") {
+
+      auth.sendPasswordResetEmail(email).then(function() {
+
+      window.alert("Email has been sent to you, Please check and verify.");
+      }).catch(function(error) {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      console.log(errorCode);
+      $("#error").text(errorMessage);
+      });
+
+
+      
+    }
+    else{
+      window.alert("Plase write your email first.");
+    }
 
 
   });

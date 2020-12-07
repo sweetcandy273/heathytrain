@@ -8,12 +8,7 @@
   <title>Login</title>
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
-
-
-
   <link rel="stylesheet" href="/css/app.css">
-
-
   <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
 
   <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
@@ -26,6 +21,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
 
@@ -44,21 +40,21 @@
     <div class="container" style="font-family: 'Kanit', sans-serif;">
       <div style=" text-align: center; font-size: 25px; margin-top: 50px;">ยินดีต้อนรับกลับ!</div>
 
-      <div style="padding-top: 30px;"> 
-        <button type="button" class="btn btn-primary btn-block" id="signingoogle">continue with Google</button></div>
-
-
+      <div style="padding-top: 30px;">
+        <button type="button" class="btn btn-primary btn-block" id="signingoogle">
+          <i class="fab fa-google" style="color: #CC0033;padding-right: 15px;"></i>
+          Continue with Google</button>
+      </div>
 
       <div class="form-group" style="padding-top: 20px;">
         <label for="">Username</label>
         <input type="email" class="form-control" name="" id="email" aria-describedby="emailHelpId" placeholder="">
-
       </div>
+
       <div class="form-group">
         <label for="">Password</label>
         <input type="password" class="form-control" name="" id="password" placeholder="">
       </div>
-
 
       <p>
       <div style="text-align: center; color: red;" id="showerror">
@@ -68,14 +64,15 @@
 
       <div> <button type="button" class="btn btn-primary btn-block" id="signinemail">Sign In</button></div>
 
-
-      <div style="text-align: center; "><button type="button" class="btn btn-link">Forgot Password</button></div>
+      <div style="text-align: center;  ">
+        <p><a name="" id="" class="btn btn-link" href="forgotpass.html" role="button">Forgot Password</a>
+        </p>
+      </div>
 
       <div style="text-align: center;  ">
         <p><a name="" id="" class="btn btn-link" href="signup.html" role="button">ALREADY HAVE AN ACCOUNT? SIGN UP </a>
         </p>
       </div>
-
 
     </div>
   </ons-page>
@@ -93,7 +90,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
-  
+
   <script src="js/signin.js"></script>
 </body>
 

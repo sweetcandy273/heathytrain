@@ -7,12 +7,7 @@
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
-
-    
-    
     <link rel="stylesheet" href="/css/app.css">
-    
-    
     <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
 
     <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
@@ -26,6 +21,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
 </head>
   <body>
     <ons-page id="signup"> 
@@ -40,9 +37,11 @@
         <div style=" text-align: center; font-size: 25px; margin-top: 50px;">สร้างบัญชี</div>
   
         <div style="padding-top: 30px;">
-        <button type="button" class="btn btn-primary btn-block" id="signingoogle">continue with Google</button></div>
+        <button type="button" class="btn btn-primary btn-block" id="signingoogle" >
+          <i class="fab fa-google" style="color: #CC0033;padding-right: 15px;"></i>
+          Continue with Google</button>
+        </div>
  
-          
           <div class="form-group" style="padding-top: 20px;">
             <label for="">Email</label>
             <input type="email" class="form-control" name="" id="email" aria-describedby="emailHelpId" placeholder="">
@@ -59,6 +58,7 @@
             <label for="">Password</label>
             <input type="password" class="form-control" name="" id="password" placeholder="">
           </div>
+
           <p>
               <div style="text-align: center; color: red;" id="showerror">
                   <span id="error"></span> 
@@ -66,8 +66,7 @@
           </p>
           
           <div> <button type="button" class="btn btn-primary btn-block" id="getstart">Get start</button></div>
-          
-          
+           
       </div> 
     </ons-page> 
     <!-- Optional JavaScript -->
