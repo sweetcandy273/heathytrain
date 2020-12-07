@@ -129,7 +129,7 @@ function opentainer(id,) {
                     </ons-col-3>
             
                     <ons-col class="" style="margin-left: 70px; margin-top: 20px; ">
-                        <ons-fab style="color: #03174C; margin-right: auto;" onclick="gosport()">
+                        <ons-fab style="color: #03174C; margin-right: auto;" onclick="">
                             <i class="material-icons md-36" style="margin-top: 16px;">add</i>
                     </ons-col>
             
@@ -146,7 +146,7 @@ function opentainer(id,) {
                     </ons-col-3>
             
                     <ons-col class="" style="margin-left: 70px; margin-top: 20px; ">
-                        <ons-fab style="color: #03174C; margin-right: auto;" onclick="gosport()">
+                        <ons-fab style="color: #03174C; margin-right: auto;" onclick="">
                             <i class="material-icons md-36" style="margin-top: 16px;">add</i>
                     </ons-col>
             
@@ -163,7 +163,7 @@ function opentainer(id,) {
                     </ons-col-3>
             
                     <ons-col class="" style="margin-left: 70px; margin-top: 20px; ">
-                        <ons-fab style="color: #03174C; margin-right: auto;" onclick="gosport()">
+                        <ons-fab style="color: #03174C; margin-right: auto;" onclick="">
                             <i class="material-icons md-36" style="margin-top: 16px;">add</i>
                     </ons-col>
             
@@ -180,7 +180,7 @@ function opentainer(id,) {
                     </ons-col-3>
             
                     <ons-col class="" style="margin-left: 70px; margin-top: 20px; ">
-                        <ons-fab style="color: #03174C; margin-right: auto;" onclick="gosport()">
+                        <ons-fab style="color: #03174C; margin-right: auto;" onclick="">
                             <i class="material-icons md-36" style="margin-top: 16px;">add</i>
                     </ons-col>
             

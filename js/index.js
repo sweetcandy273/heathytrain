@@ -71,7 +71,16 @@ db.collection("home").get().then((querySnapshot) => {
             $("#showchat").append(result)
 
         }
-     
+
+        if (doc.data().imgname == "bmi") {
+
+            const result =`<img src="${doc.data().link}" alt="" width="100%">`
+           
+            $("#bmi_pic").append(result)
+
+        }
+
+
      
 
     })

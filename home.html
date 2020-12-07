@@ -101,18 +101,24 @@
             </ons-row>
             <ons-row class="home_cover">
                 <div class="bmi_home" style="background-color: #FD8EA9;" onclick="">
+                    <ons-row class="home_cover">
                     <ons-col style="color: #ffffff;">
-                        <div class="activity_home_title" style="font-size: 30px;">BMI</div>
+                        <div class="activity_home_detail" style="font-size: 30px;">BMI</div>
                         <div class="activity_home_detail">คำนวณดัชนีมวลกาย</div>
-                    </ons-col>
-                    <ons-col style="color: #ffffff;">
+ 
                         <div class="activity_home_detail">BMI:</div>
-                        <div class="activity_home_detail">?</div>
+                        <div class="activity_home_detail" style="font-size: 30px;">22</div>
                         <div class="activity_home_detail">ผลทดสอบ:</div>
-                        <div class="activity_home_detail">?</div>
+                        <div class="activity_home_detail" style="font-size: 30px;">ปกติ</div>
                     </ons-col>
 
-                    <div class="container text-right">
+                    <ons-col>
+                        <div id="bmi_pic"></div>
+                    </ons-col>
+
+                    
+                     </ons-row>
+                     <div class="container text-right">
                         <ons-button class="btn-start" onclick="goBMI()">UPDATE</ons-button>
                     </div>
                 </div>
