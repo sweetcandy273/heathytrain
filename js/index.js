@@ -79,6 +79,16 @@ db.collection("home").get().then((querySnapshot) => {
             $("#bmi_pic").append(result)
 
         }
+        
+        if (doc.data().imgname == "user") {
+
+            const result =`<img src="${doc.data().link}" alt="" width="50%" class="rounded-circle">`
+           
+            $("#showimguser").append(result)
+
+        }
+
+        
 
 
      
