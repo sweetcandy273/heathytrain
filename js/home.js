@@ -30,7 +30,7 @@ $(function () {
             // $("#photo").attr("src",photoUrl);
 
         } else {
-            // window.location.href = 'signin.html';
+            window.location.href = 'firstpage.html';
         }
     });
 
@@ -47,5 +47,5 @@ function logout() {
         });
 }
 function gohome() {
-    window.location.href = "person.html";
+    window.location.href = "home.html";
 }
