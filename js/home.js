@@ -47,5 +47,5 @@ function logout() {
         });
 }
 function gohome() {
-    window.location.href = "home.html";
+    window.location.href = "welcome.html";
 }

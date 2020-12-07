@@ -19,7 +19,7 @@ $(function () {
     if (user) {
       // User is signed in.
       console.log(user);
-      window.location.href = 'home.html';
+      window.location.href = 'welcom.html';
     }
   });
 
@@ -67,11 +67,6 @@ $(function () {
 
 
   });
-
-
-
-
-
 
 
 
