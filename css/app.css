@@ -41,10 +41,15 @@
   }
 
 /* welcome */
+.icon_waiting{
+
+  text-align: center;
+}
 
   .welcome{
-background-color: #8E97FD;
+background-color: white;
 font-family: 'Kanit', sans-serif;
+
   }
   .btn-getstart{
     color: #3F414E;

@@ -23,26 +23,29 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+    
     <link rel="manifest" href="/manifest.json">
 </head>
 
 <body class="welcome">
-    <div style="margin-top: 40px;">
+    <div style="margin-top: 150px;">
 
 
 
 
 
     </div>
-    <div id="showpic_welcome">
-
+    <div class="icon_waiting">
+        <img src="/img/icon/icon-192.png" alt="">
     </div>
 
+    <br>
     <div class="container">
 
         <p class="text-center">
 
-            <ons-button class="btn-getstart" onclick="gofirstpage()">Get Start</ons-button>
+            <ons-button class="btn-getstart" id="getStart">Get Start</ons-button>
         </p>
     </div>
 
@@ -64,10 +67,24 @@
         crossorigin="anonymous"></script>
 
     <script src="js/index.js"></script>
-    
+
+    <script>
+        document.getElementById('getStart').onclick = function(){
+            window.location.href = 'firstpage.html'
+        }
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then((reg) => {
+                        console.log('Service worker registered.', reg);
+                    });
+            });
+        }
+    </script>
 
 
-    
 
 </body>
 
